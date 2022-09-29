@@ -1,10 +1,72 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
-h1 {
-  font-size: 4rem;
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 100%;
+}
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  background: #101419;
+}
+.header-top .logo {
+  height: 100%;
+  width: 170px;
+  background-image: url(../images/amazonlogo.png);
+}
+.header-mid {
+  background: #1b2430;
+  height: 39px;
+  display: flex;
+  align-items: center;
+}
+.header-mid .nav-container {
+  display: flex;
+  padding-left: 11px;
+}
+.header-mid .nav-fill a {
+  color: white;
+  margin: 5px;
+  padding: 7px 8px;
+}
+.header-mid .nav-fill a:hover {
+  border: 1px solid white;
+  border-radius: 0.2rem;
+}
+.header-alert .alert {
+  padding: 1.125rem;
+  background: #d1f7e7;
+  font-weight: bold;
+}
+.header-bottom {
+  border-top: 1px #c6c6c6 solid;
+  border-bottom: 1px #c6c6c6 solid;
+  height: 31px;
+  background: #f9f9f9;
+  display: flex;
+  align-items: center;
+}
+.header-bottom .subnavbar-container {
+  font-size: 15px;
+  margin: 0 9px 0 15px;
+}
+.header-bottom .subnavbar-container span {
+  height: 31px;
+}
+.header-bottom .subnavbar-container a {
+  color: black;
+  padding: 0 20px 0 11px;
+}
+.header-bottom .subnavbar-container a.nar {
+  padding: 0 11px;
 }
 
 /*# sourceMappingURL=main.css.map */
