@@ -1,0 +1,16 @@
+@media (max-width: 700px) {
+  .main-nav {
+    display: none;
+  }
+  .main-nav {
+    display: block;
+  }
+}
+@media (min-width: 700px) {
+  .mobile-menu,
+.mobile-nav {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=mobile.css.map */
