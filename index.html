@@ -9,41 +9,72 @@
   <link rel="stylesheet" href="css/Normalize.css" />
   <link rel="stylesheet" href="css/mobile.css" />
   <link rel="stylesheet" href="css/main.css" />
+
   <title>Document</title>
 </head>
 
 <body>
   <header>
+     <!-- ------------------------------------------nav-top--------------------------------------------------------- -->
     <div class="header-top">
-      <div class="logo"></div>
-      <div class="location">
-        <a href="">
-          <div class="icon"></div>
-          <h4>Deliver to NAME</h4>
-          <h3>adress</h3>
-        </a>
+      <div class="nav-left">
+        <div class="logo nav-item"></div>
+        <div class="location nav-item">
+          <a href="">
+            <div class="location-icon"></div>
+            <div>
+              <h5>Deliver to name</h5>
+              <h4>Address</h4>
+            </div>
+          </a>
+        </div>
       </div>
-      <div class="search-container">
-        <label for="cars">Choose a car:</label>
-        <select name="cars" id="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="mercedes">Mercedes</option>
-          <option value="audi">Audi</option>
-        </select><input type="search" placeholder="this" />
+      <div class="nav-mid">
+        <div class="search-container ">
+          <form action="input">
+            <select name="cars" id="all">
+              <option value="volvo">All</option>
+              <option value="saab">Saab</option>
+              <option value="mercedes">Mercedes</option>
+              <option value="audi">Audi</option>
+            </select>
+            <input class="query bar" type="text" placeholder="Search"/>
+            <button style=color:white class="search-button" type="submit"><div class="fas fa-search"></div></button>
+          </form>
+        </div>
       </div>
-      <div class="lang-wrapper">
+      <div class="nav-right">
+      <div class="lang-wrapper nav-item">
         <div class="flag-icon"></div>
         <div class="lang-inner">
-          <select name="cars" id="cars">
-            <option value="volvo">Volvo</option>
-            <option value="saab">Saab</option>
-            <option value="mercedes">Mercedes</option>
-            <option value="audi">Audi</option>
+          <select name="cars" id="flags">
+            <option value="volvo">us</option>
+            <option value="saab">china</option>
+            <option value="mercedes">india</option>
+            <option value="audi">Israel</option>
           </select>
         </div>
       </div>
+
+        <div class="account nav-item">
+          <h5>Hello, name</h5>
+          <h4>Account & Lists</h4>
+        </div>
+        <div class="returns nav-item">
+          <h5>returns</h5>
+          <h4>& Orders</h4>
+        </div>
+        <div class="cart nav-item">
+          <div class="cart-icon">
+            <div class="items-quant">0</div>
+          </div>
+          <span><h4>Cart</h4></span>
+        </div>
+      </div>
+
     </div>
+<!-- ------------------------------------------nav-mid--------------------------------------------------------- -->
+
     <div class="header-mid">
       <div class="nav-container">
         <div class="nav-left">
@@ -65,12 +96,14 @@
         </div>
       </div>
     </div>
+    <!-- ------------------------------------------nav-alert--------------------------------------------------------- -->
     <div class="header-alert">
       <p class="alert">
         We are experiencing shipping delays in your area due to observance of
         local holidays. Please expect extended delivery time.
       </p>
     </div>
+    <!-- ------------------------------------------nav-bottom--------------------------------------------------------- -->
     <div class="header-bottom">
       <div class="subnavbar-container">
         <span><a href="" class="nar">Musical Instruments</a></span>
@@ -99,85 +132,142 @@
           </li>
         </ul>
       </div>
-      <!-- </div> -->
+      <!-- <product section> ---------------------- -->
       <div class="product-container">
-        <div class="col-left">
-          <div class="image-block">
-            <div class="inner-fix">
-              <div class="wrapper">
-                <img src="https://m.media-amazon.com/images/I/61kt32AgFsL._AC_SL1200_.jpg" alt="" />
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col-center">
-          <h2>Fender SuperSoft Guitar Strap, 2in, Black</h2>
-          <a href="#" class="blue-link">Visit the Fender Store</a> <br>
-          <div class="rating"><span class="star-rating"></span> <span><a href="#" class="blue-link">276 ratings</a> | <a href="" class="blue-link">8 answered questions</a></span>
+        <div class="product-section">
 
-          <div class="choice-line">
-            <div class="amazonchoice"><img src="/dist/images/Screen Shot 2022-09-30 at 21.17.30.svg" alt=""></div> <div class="text">for "<a href="#" class="blue-link">fender guitar strap</a>"</div>
-          </div></div>
-          <hr>
-          <p class="description-box">
-            <ul>
-              <li>2” wide guitar strap</li>
-              <li>Crafted from spun polyester</li>
-              <li>shock-absorbing feel</li>
-              <li>Country of Origin: Canada</li>
-            </ul>
-          </p>
-        </div>
-        <div class="col-right">
-          <div class="box">
-            <div class="btn-yellow">
-              <div class="btn-inner">See Simillar Items</div>
-            </div>
-            <div class="btn-second">
-              <div class="btn-inner">See All Buying Options</div>
-            </div>
-            <div class="location-box">
-              <div class="location-icon"></div>
-              <div>
-                <a href="" class="blue-link"> Deliver to Name - Location </a>
-              </div>
-            </div>
-            <hr />
-            <div class="listbar">
-              <button>
-                <div class="text-box">
-                  <span>Add to List</span>
+
+
+
+          <!-- image product ---------------------- -->
+          <div class="col-left">
+            <div class="image-block">
+              <div class="inner-fix">
+                <div class="wrapper">
+                  <img src="https://m.media-amazon.com/images/I/61kt32AgFsL._AC_SL1200_.jpg" alt="" />
                 </div>
-              </button>
-              <button>
-                <button>
-                  <div class="dropdown">
-                    <div class="select">
-                      <div class="fa fa-angle-down"></div>
-                      <ul>
-                        <li>
-                          <span>img</span>
-                          <span>Shopping List<br />Private</span>
-                        </li>
-                        <hr />
-                        <li></li>
-                      </ul>
-                    </div>
-                </button>
+              </div>
             </div>
-            </button>
           </div>
-          <div class="sell-yours">
-            <div class="yours-container">
-              <h6>Have one to sell?</h6>
-              <div class="btn-three">
-                <span class="btn-inner">Sell on Amazon</span>
+          <!-- product description ---------------------- -->
+          <div class="col-center">
+            <h2>Fender SuperSoft Guitar Strap, 2in, Black</h2>
+            <a href="#" class="blue-link">Visit the Fender Store</a> <br>
+            <div class="rating"><div class="starwrap">
+              <div class="star-rating"></div> <span><a href="#" class="blue-link">276 ratings</a> |
+                  <a href="" class="blue-link">8 answered questions</a></span>
+            </div>
+
+              <div class="choice-line">
+                <div class="amazonchoice"><img src="/dist/images/Screen Shot 2022-09-30 at 21.17.30.svg" alt=""></div>
+                <div class="text">for "<a href="#" class="blue-link">fender guitar strap</a>"</div>
+              </div>
+            </div>
+            <hr>
+            <div class="spacer"></div>
+            <div class="flexitem">
+              <p class="description-box">
+              <ul>
+                <li>2” wide guitar strap</li>
+                <li>Crafted from spun polyester</li>
+                <li>shock-absorbing feel</li>
+                <li>Country of Origin: Canada</li>
+              </ul>
+              </p>
+            </div>
+            <span id="edpIngressContainer">
+              <span class="edpIngressIcon"></span>
+              <a id="edpIngress" class="blue-link" href=""> <span class="edpIngressText">Report incorrect product
+                  information.</span></a> </span>
+          </div>
+          <!-- buy section ---------------------- -->
+          <div class="col-right">
+            <div class="box">
+              <div class="btn-yellow">
+                <div class="btn-inner">See Simillar Items</div>
+              </div>
+              <div class="btn-second">
+                <div class="btn-inner">See All Buying Options</div>
+              </div>
+              <div class="location-box">
+                <div class="location-icon"></div>
+                <div>
+                  <a href="" class="blue-link"> Deliver to Name - Location </a>
+                </div>
+              </div>
+              <hr />
+              <div class="listbar">
+                <button>
+                  <div class="text-box">
+                    <span>Add to List</span>
+                  </div>
+                </button>
+                <button>
+                  <button>
+                    <div class="dropdown">
+                      <div class="select">
+                        <div class="fa fa-angle-down"></div>
+                        <ul>
+                          <li>
+                            <span>img</span>
+                            <span>Shopping List<br />Private</span>
+                          </li>
+                          <hr />
+                          <li></li>
+                        </ul>
+                      </div>
+                  </button>
+              </div>
+              </button>
+            </div>
+            <div class="sell-yours">
+              <div class="yours-container">
+                <h6>Have one to sell?</h6>
+                <div class="btn-three">
+                  <span class="btn-inner">Sell on Amazon</span>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </div>
+        <div class="spacer-p">
+        </div>
+        <hr>
+        <div class="carousel">
+          <div class="carousel-header-top">
+            <h3 style="display:inline-block;">4 stars and above</h3> <span>Page 1 of 44</span>
+          </div>
+          <span>Sponsered<i class="sponsered"></i></span>
+<!-- ------------------------------------------arrow-left--------------------------------------------------------- -->
+<div class="cards-gallery">
+  <div class="media-el">
+    <img src="https://m.media-amazon.com/images/I/41RtXtUOc1S._AC_SR160,160_.jpg" alt="">
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+    <div class="media-el">
+      <img src="https://m.media-amazon.com/images/I/31PK0kPdqpL._AC_SR160,160_.jpg" alt="">
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+      <div class="media-el">
+        <img src="https://m.media-amazon.com/images/I/41Y0ZngC2ZL._AC_SR160,160_.jpg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+        <div class="media-el">
+          <img src="https://m.media-amazon.com/images/I/31AlAazcDzL._AC_SR160,160_.jpg" alt="">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+          <div class="media-el">
+            <img src="https://m.media-amazon.com/images/I/41ILrL8644L._AC_SR160,160_.jpg" alt="">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+            <div class="media-el">
+              <img src="https://m.media-amazon.com/images/I/41jXzMnCgFL._AC_SR160,160_.jpg" alt="">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+              <div class="media-el">
+                <img src="https://m.media-amazon.com/images/I/51wVp02+9eL._AC_SR160,160_.jpg" alt="">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, esse.</p></div>
+              </div>
+              <!-- ------------------------------------------arrow-right--------------------------------------------------------- -->
+            </div>
+          </div>
+          <!-- might need to wrap product-container -->
+        </div>
+
     <!-- </div> -->
     </div>
   </main>
